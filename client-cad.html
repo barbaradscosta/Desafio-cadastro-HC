@@ -1,0 +1,100 @@
+<html lang="pt-bt">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de clientes</title>
+
+</head>
+
+<body class="roupa1">
+        
+    <header> <!-- INÍCIO DA BARRA DE MENU -->
+        <div class="container">
+            <img class="logo" src="img/120.png" alt="logotipo" width="120">
+            <div>
+                <h3>
+                    <a class="back" href="index.html">Voltar</a>
+                </h3>
+            </div>
+        </div>
+    </header> <!-- FIM DA BARRA DE MENU -->
+    
+    <div class="box">
+            <div class="box-item">
+                <h3>Cadastrar clientes</h3>
+                
+                <div class="item">
+                    <input type="text" id="name" placeholder="" required >
+                    <label id="labelName" for="name">Nome</label>
+                </div>
+
+                <div class="item">
+                    <input type="date" id="nascimento" placeholder="" required >
+                    <label id="labelNascimento" for="nascimento">Data de nascimento</label>
+                </div>
+
+                <div class="item">
+                    <input type="tel" id="cel" placeholder="" required >
+                    <label id="labelCel" for="cel">Celular</label>
+                </div>
+
+                <div class="item">
+                    <input type="email" id="email" placeholder="" required >
+                    <label id="labelEmail" for="email">E-mail</label>
+                </div>
+
+                <div class="item">
+                    <input type="text" id="adress" placeholder="" >
+                    <label id="labelAdress" for="adress">Endereço</label>
+                </div>
+
+                <div class="item">
+                    <input type="text" id="cpf" placeholder="" required >
+                    <label id="labelCpf" for="cpf">CPF</label>
+                </div>
+
+                <div class="item">
+                    <input type="text" id="city" placeholder="" >
+                    <label id="labelCity" for="city">Cidade</label>
+                </div>
+                
+                <div class="btn">
+                    <button onclick="salvarConteudoStorage()" > Cadastrar </button>
+                </div>
+        </div>
+</div>
+</div>
+
+
+    <div class="tabela">
+        <table width="60%" border=" solid 1px"  >
+        <th>Nome</th>
+        <th>Nascimento</th>
+        <th>Celular</th>
+        <th>Email</th>
+        <th>Endereço</th>
+        <th>CPF</th>
+        <th>Cidade</th>
+            <tbody id="corpoTabela">
+
+            </tbody>
+        </table>
+    </div>
+
+<footer>
+<br>
+<br>
+<span class="nome">Desenvolvido por</span>
+<span>
+ <a href="https://www.linkedin.com/in/barbaradsc/" class="nome"> &copy;Bárbara Costa </a>
+</span>
+</footer>
+
+<script src="js/cadcliente.js"></script>
+
+
+</body>
+</html>

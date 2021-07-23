@@ -1,0 +1,81 @@
+<html lang="pt-bt">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Produtos</title>
+
+</head>
+
+<body class="roupa2">
+        
+    <header> <!-- INÍCIO DA BARRA DE MENU -->
+        <div class="container">
+            <img class="logo" src="img/120.png" alt="logotipo" width="120">
+            <div>
+                <h3>
+                    <a class="back" href="index.html">Voltar</a>
+                </h3>
+            </div>
+        </div>
+    </header> <!-- FIM DA BARRA DE MENU -->
+    
+    <div class="box">
+            <div class="box-item">
+                <h3>Cadastrar Produtos</h3>
+                
+                <div class="item">
+                    <input type="text" id="nameProduct" placeholder="" required>
+                    <label id="labelNameProduct" for="nameProduct">Nome do produto</label>
+                </div>
+
+                <div class="item">
+                    <input type="text" id="price" placeholder="" required >
+                    <label id="labelPrice" for="price">Preço</label>
+                </div>
+
+                <div class="item">
+                    <input type="text" id="size" placeholder="" required >
+                    <label label="labelSize" for="size">Tamanho</label>
+                </div>
+
+                <div class="item">
+                    <input type="text" id="description" placeholder="" required>
+                    <label id="labelDescription"  for="description" >Descrição</label>
+                </div>
+
+                    <div class="btn">
+                        <button onclick="salvarConteudoStorage()" > Cadastrar </button>
+                    </div>
+            </div>
+    </div>
+</div>
+    
+
+<div class="tabela">
+    <table width="60%" border=" solid 1px"  >
+      <th>Produto</th>
+      <th>Preço</th>
+      <th>Tamanho</th>
+      <th>Descrição</th>
+      <tbody id="corpoTabela">
+  
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <br>
+    <br>
+    <span class="nome">Desenvolvido por</span>
+    <span>
+     <a href="https://www.linkedin.com/in/barbaradsc/" class="nome"> &copy;Bárbara Costa </a>
+    </span>
+</footer>
+
+<script src="js/cadproduto.js"></script>
+
+</body>
+</html>
